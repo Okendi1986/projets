@@ -82,6 +82,7 @@
 <!-- partenaire -->
 @include('layout.partenaire')
 
+@include('layout.contact')
 <!-- About Starts -->
 <div class="highlight-info">
 <div class="overlay spacer">
