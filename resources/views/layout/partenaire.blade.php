@@ -1,12 +1,6 @@
 <div id="partners" class="container spacer ">
 	<h2 class="text-center  wowload fadeInUp">Some of our happy clients</h2>
   <div class="clearfix">
-    <div class="col-sm-6 partners  wowload fadeInLeft">
-         <img src="images/partners/1.jpg"  alt="partners">
-         <img src="images/partners/2.jpg"  alt="partners">
-         <img src="images/partners/3.jpg" alt="partners">
-         <img src="images/partners/4.jpg" alt="partners">
-    </div>
     <div class="col-sm-6">
 
 
