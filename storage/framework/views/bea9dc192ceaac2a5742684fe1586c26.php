@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\HP\Desktop\projets\Appvoiture\resources\views/login.blade.php ENDPATH**/ ?>
