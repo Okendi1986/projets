@@ -8,19 +8,22 @@ Route::get('/', function () {
     return view('master');
 })-> name('master');
 
-Route::get('/about',function(){
+Route::get("/about",function(){
     return view('about');
 })-> name('about');
 
 Route::get('/works', function () {
     return view('works');
-})->name('works');
+})-> name('works'); ;
+
 
 Route::get('/services', function () {
     return view('services');
 })->name('services');
 
-Route::get('/contact', [ContactController::class, 'show'])->name('contact');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
 Route::get('/login', function () {
     return view('login');

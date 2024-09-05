@@ -1,12 +1,24 @@
- jQuery(document).ready(function($) {
- 
-    $(".scroll a, .navbar-brand, .gototop").click(function(event){   
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
-    $(".scroll li").removeClass('active');
-    $(this).parents('li').toggleClass('active');
-    });
-    });
+jQuery(document).ready(function($) {
+  // Cible les liens qui commencent par #
+  $(".scroll a, .navbar-brand, .gototop").click(function(event){   
+      var target = $(this).attr("href"); // Récupère l'attribut href du lien
+
+      // Si le lien est un lien d'ancrage (commence par #)
+      if (target.startsWith("#")) {
+          event.preventDefault();  // Empêche la redirection normale
+          // Fait défiler la page jusqu'à l'élément ciblé
+          $('html, body').animate({
+              scrollTop: $(target).offset().top
+          }, 600, 'swing');
+      }
+
+      // Gestion des classes actives (optionnel)
+      $(".scroll li").removeClass('active');
+      $(this).parents('li').toggleClass('active');
+  });
+});
+
+
 
 
 
