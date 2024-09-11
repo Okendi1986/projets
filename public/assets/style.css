@@ -84,23 +84,21 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
     flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
 }
 
-.text-box {
-    border: 2px solid #004F68; /* Couleur de la bordure */
-    padding: 20px; /* Espace à l'intérieur du cadre */
-    border-radius: 10px; /* Coins arrondis */
-    background-color: #f9f9f9; /* Couleur de fond du cadre */
-    flex: 1 1 calc(33.33% - 20px); /* 3 boxes par ligne avec espace */
-    margin: 10px; /* Espace entre les boxes */
-    box-sizing: border-box; /* Inclut la bordure et le padding dans la taille totale */
-    height: 300px; /* Fixe une hauteur pour les boxes */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .text-box h4, .text-box p {
     margin: 0;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    flex: 1;
+    max-width: 33.3333%;
+    padding: 15px;
+}
+
 .text-box h4 i {
     color: #004F68; /* Couleur de l'icône */
     margin-right: 10px; /* Espace entre l'icône et le texte */
@@ -161,11 +159,194 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .carousel-indicators li{border: 1px solid #2BB2E3;}
 .carousel-indicators{bottom: 0;}
 
-/*works*/
-#works{padding-top:6em;}
-#works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
-#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
-/*works*/
+/* Conteneur des images */
+#works {
+	display: flex;
+	flex-wrap: wrap; /* Permet aux figures de passer à la ligne suivante si nécessaire */
+	gap: 1em; /* Espace entre les éléments */
+	justify-content: center; /* Centre les éléments horizontalement */
+	padding-top: 6em;
+  }
+  
+  /* Styles pour chaque figure */
+  #works figure {
+	flex: 1 1 calc(31% - 2em); /* Ajuste la largeur des figures */
+	box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur */
+	position: relative;
+	margin: 0;
+  }
+  
+  /* Styles pour les images */
+  #works img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Styles pour les légendes */
+  #works figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+  }
+  
+  /* Styles pour les liens dans les légendes */
+  #works figcaption a {
+	border: 1px solid #fff;
+	margin-top: 1em;
+	display: inline-block;
+	color: #fff;
+	padding: 0 2em;
+  }
+  
+  #works figcaption a:hover {
+	text-decoration: none;
+	padding: 0 3em;
+  }
+/* Contact css */
+    /* Conteneur du formulaire */
+    .container.contactform {
+		max-width: 500px; /* Augmente la largeur maximale du conteneur */
+		padding: 2.5em 2em; /* Ajuste le padding */
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+		margin: 2.5em auto; /* Centre le conteneur horizontalement */
+		border: 1px solid #ddd;
+	  }
+  
+	  .container.contactform h2 {
+		text-align: center; /* Centre le texte du titre */
+		font-size: 2em; /* Augmente la taille de la police */
+		color: #333;
+		margin-bottom: 0.75em;
+		font-weight: 700;
+	  }
+  
+	  .container.contactform small {
+		display: block;
+		margin-top: 0.5em;
+		color: #777;
+		text-align: center; /* Centre le texte de la description */
+		font-style: italic;
+	  }
+  
+	  .form-group {
+		margin-bottom: 1.25em; /* Augmente légèrement la marge entre les champs */
+	  }
+  
+	  .form-group label {
+		display: block;
+		margin-bottom: 0.5em; /* Augmente la marge sous le label */
+		font-weight: 600;
+		font-size: 1em; /* Ajuste la taille de la police du label */
+		color: #333;
+	  }
+  
+	  .form-group .form-control {
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		padding: 0.75em;
+		font-size: 1em; /* Ajuste la taille de la police des champs */
+		width: 100%;
+		box-sizing: border-box;
+	  }
+  
+	  .btn-primary {
+		background-color: #28a745;
+		border-color: #28a745;
+		color: #fff;
+		padding: 0.75em 1.5em; /* Ajuste le padding du bouton */
+		border-radius: 5px;
+		font-size: 1em; /* Ajuste la taille de la police du bouton */
+		cursor: pointer;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+		text-align: center;
+		display: inline-block;
+		text-decoration: none;
+	  }
+  
+	  .btn-primary:hover,
+	  .btn-primary:focus {
+		background-color: #218838;
+		border-color: #1e7e34;
+	  }
+  
+	  @media (max-width: 767px) {
+		.container.contactform {
+		  padding: 1.5em 1em;
+		}
+  
+		.container.contactform h2 {
+		  font-size: 1.5em;
+		}
+  
+		.form-group label {
+		  font-size: 0.9em;
+		}
+  
+		.form-group .form-control {
+		  font-size: 0.9em;
+		}
+  
+		.btn-primary {
+		  font-size: 0.9em;
+		  padding: 0.6em 1em;
+		}
+	  }
+  
+	  /* Styles pour la section d'information */
+	  .contact-info {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1em;
+		background-color: #ffffff;
+		padding: 2em;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+		margin: 0 1em 2em;
+		border-radius: 10px;
+	  }
+  
+	  .contact-info img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		object-fit: cover;
+	  }
+  
+	  .contact-info h2 {
+		font-size: 1.5em;
+		color: #333;
+		margin-bottom: 0.5em;
+	  }
+  
+	  .contact-info p,
+	  .contact-info a {
+		margin: 0.5em 0;
+		color: #333;
+	  }
+  
+	  .contact-info a {
+		color: #007bff;
+		text-decoration: none;
+	  }
+  
+	  .contact-info a:hover {
+		text-decoration: underline;
+	  }
+  
+	  .map-container iframe {
+		width: 100%;
+		height: 300px;
+		border: 0;
+		border-radius: 8px;
+	  }
+/*Fin contact*/ 
 
 /*team*/
 .team figure{width: 100%;}
@@ -179,18 +360,6 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .highlight-info .overlay{background: rgba(33,171,202,0.5);}
 .highlight-info h4{color: #fff;margin:0.5em 0 0 0;}
 /*about us*/
-
-
-
-
-
-
-
-
-
-/*contact*/
-.contactform textarea,.contactform input{width: 100%;padding:1em;border:1px solid #ccc;margin-bottom: 1em;border-radius: 0;outline: none;}
-/*contact*/
 
 
 .footer{background-color: #111; color: #fff; font-size: 1em;color: #aaa;}

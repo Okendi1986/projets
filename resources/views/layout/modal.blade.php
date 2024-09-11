@@ -1,22 +1,46 @@
 <!-- Circle Starts -->
 <div id="about" class="container spacer about">
-  <h2 class="text-center wowload fadeInUp">Acheter de voitures neuves avec Auto-sale company</h2>  
-  <div class="row text-box-container">
+    <h2 class="text-center wowload fadeInUp">
+        Pourquoi choisir 
+        <span style="color: orange;">Auto-Sale Company ?</span><br>
+        <small>
+            Profitez de notre offre de ouff, des voitures neuves et 
+            de la garantie d'un achat en toute sécurité.
+        </small>
+    </h2>  
+    
+    <div class="row text-box-container">
       <div class="col-md-4 wowload fadeInLeft text-box">
-          <h4><i class="fa fa-car"></i> Une large palette de choix</h4>
-          <p>Découvrez une large gamme de marques et de modèles adaptés à votre budget et à votre style. Que ce soit un SUV, une berline ou une citadine, choisissez parmi nos nombreuses options en essence, diesel ou hybride, automatique ou manuelle..</p>
+          <h4>
+              <img src="images/europe.svg" alt="Icone">
+              <span style="color: cornflowerblue;">Le plus grand choix d'annonces d'auto aux États-Unis</span>
+          </h4>
+          <p>Nous vous aidons à trouver la voiture de vos rêves parmi la plus grande sélection d’annonces de véhicules d’Europe. 
+          Comparez les prix, les finitions, les motorisations et achetez en toute sécurité.</p>
       </div>
+      
       <div class="col-md-4 wowload fadeInRight text-box">
-          <h4><i class="fa fa-star"></i> Qualité Garantie</h4>
-          <p>Toutes les voitures proviennent de notre propre partenaire. Elles sont minutieusement vérifiées et reconditionnées par les experts dans les centre de reconditionnement de nos partenaire. .</p>    
+          <h4>
+              <img src="images/reviser.svg" alt="Icone">
+              <span style="color: cornflowerblue;">Véhicules contrôlés et garantis</span>
+          </h4>
+          <p>Nos partenaires vérifient l'état de votre nouvelle voiture, 
+              la préparent avant la livraison. 
+              Vous bénéficiez de l’expertise de nos partenaires 
+              et d’une garantie extensible pour votre véhicule.</p>
       </div>
+      
       <div class="col-md-4 wowload fadeInRight text-box">
-          <h4><i class="fa fa-smile"></i> Satisfaction garantie</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>    
+          <h4>
+              <img src="images/garantie.svg" alt="Icone">
+              <span style="color: cornflowerblue;">Vous êtes satisfait</span>
+          </h4>
+          <p>Votre voiture certifiée vous permet d’essayer votre nouveau véhicule
+              chez vous et sans contraintes avec une garantie.</p>
       </div>
+    </div>
   </div>
-</div>
-<!-- Circle Ends -->
+<!-- Circle Ends 
 
     
       <div class="process">
@@ -40,4 +64,4 @@
           </ul>
       </div>
     </div>
-    <!-- #Cirlce Ends -->
+#Cirlce Ends -->
