@@ -210,15 +210,17 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
   }
 /* Contact css */
     /* Conteneur du formulaire */
-    .container.contactform {
+	.container.contactform {
 		max-width: 500px; /* Augmente la largeur maximale du conteneur */
 		padding: 2.5em 2em; /* Ajuste le padding */
+		padding-top: 7em; /* Ajoute un padding supérieur pour éviter que le contenu soit caché */
 		background-color: #ffffff;
 		border-radius: 10px;
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 		margin: 2.5em auto; /* Centre le conteneur horizontalement */
 		border: 1px solid #ddd;
 	  }
+	  
   
 	  .container.contactform h2 {
 		text-align: center; /* Centre le texte du titre */
