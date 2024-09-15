@@ -214,24 +214,33 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 /* Styles pour les liens dans les légendes */
 #works figcaption a {
-	border: 1px solid #fff;
-	margin-top: 1em;
-	display: inline-block;
-	color: #fff;
-	padding: 0 2em;
-	text-decoration: none;
+    border: 2px solid #fff;
+    background-color: #ff5733; /* Couleur de fond plus vive */
+    color: #fff;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em; /* Taille du texte augmentée */
+    border-radius: 5px; /* Bords arrondis */
+    transition: background-color 0.3s ease, padding 0.3s ease, color 0.3s ease;
 }
 
 /* Styles pour le bouton lors du survol */
 #works figcaption a:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: 0 3em;
+    background-color: #c0392b; /* Couleur plus foncée au survol */
+    color: #ffd700; /* Change la couleur du texte au survol */
+    padding: 0.5em 2.5em; /* Légère augmentation du padding au survol */
+    border-color: #ffd700; /* Change la couleur de la bordure au survol */
 }
+
 
 /* Transition pour le survol */
 #works figcaption a {
 	transition: padding 0.3s ease;
 }
+
+
 
 /* Contact css */
     /* Conteneur du formulaire */
@@ -288,15 +297,16 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 		background-color: #28a745;
 		border-color: #28a745;
 		color: #fff;
-		padding: 0.75em 1.5em; /* Ajuste le padding du bouton */
+		padding: 0.9em 2em; /* Augmentation du padding pour plus d'espace */
 		border-radius: 5px;
-		font-size: 1em; /* Ajuste la taille de la police du bouton */
+		font-size: 1.2em; /* Augmente la taille du texte pour plus de visibilité */
 		cursor: pointer;
 		transition: background-color 0.3s ease, border-color 0.3s ease;
 		text-align: center;
 		display: inline-block;
 		text-decoration: none;
-	  }
+		white-space: nowrap; /* Empêche le texte de se découper en plusieurs lignes */
+	}
   
 	  .btn-primary:hover,
 	  .btn-primary:focus {

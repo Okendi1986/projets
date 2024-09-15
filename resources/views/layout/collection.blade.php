@@ -36,7 +36,7 @@
         <img src="images/portfolio/3.jpg" alt="img01"/>
         <figcaption>
             <h2>Mercedes</h2>
-            <p>Lily likes to play with crayons and pencils<br>
+            <p>nouveau<br>
             <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
@@ -44,7 +44,7 @@
         <img src="images/portfolio/5t.jpg" alt="img01"/>
         <figcaption>
             <h2>Acura</h2>
-            <p>Lily likes to play with crayons and pencils<br>
+            <p>nouveau<br>
             <a href="images/portfolio/5t.jpg" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
@@ -74,7 +74,7 @@
         </figcaption>
     </figure>
     <div class="text-center" style="margin-top: 20px;">
-        <a href="#catalogue" class="btn btn-primary" style="width:25%">Voir plus de modèles</a>
+        <a href="#catalogue" class="btn btn-primary" style="width:95%">Voir plus de modèles</a>
     </div>
 </div>
 
