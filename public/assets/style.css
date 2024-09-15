@@ -162,52 +162,77 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 /* Conteneur des images */
 #works {
 	display: flex;
-	flex-wrap: wrap; /* Permet aux figures de passer à la ligne suivante si nécessaire */
-	gap: 1em; /* Espace entre les éléments */
-	justify-content: center; /* Centre les éléments horizontalement */
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
 	padding-top: 6em;
-  }
-  
-  /* Styles pour chaque figure */
-  #works figure {
-	flex: 1 1 calc(31% - 2em); /* Ajuste la largeur des figures */
-	box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur */
+}
+
+/* Styles pour chaque figure */
+#works figure {
+	flex: 1 1 calc(25% - 2em); /* 4 images par ligne */
+	box-sizing: border-box;
 	position: relative;
 	margin: 0;
-  }
-  
-  /* Styles pour les images */
-  #works img {
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+	#works figure {
+		flex: 1 1 calc(50% - 2em); /* 2 images par ligne sur petit écran */
+	}
+}
+
+@media (max-width: 480px) {
+	#works figure {
+		flex: 1 1 calc(100% - 2em); /* 1 image par ligne sur écran très petit */
+	}
+}
+
+/* Styles pour les images */
+#works img {
 	display: block;
 	width: 100%;
 	height: auto;
-  }
-  
-  /* Styles pour les légendes */
-  #works figcaption {
+}
+
+/* Styles pour les légendes */
+#works figcaption {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	padding: 1em;
 	text-align: center;
-  }
-  
-  /* Styles pour les liens dans les légendes */
-  #works figcaption a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Styles pour les liens dans les légendes */
+#works figcaption a {
 	border: 1px solid #fff;
 	margin-top: 1em;
 	display: inline-block;
 	color: #fff;
 	padding: 0 2em;
-  }
-  
-  #works figcaption a:hover {
 	text-decoration: none;
+}
+
+/* Styles pour le bouton lors du survol */
+#works figcaption a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
 	padding: 0 3em;
-  }
+}
+
+/* Transition pour le survol */
+#works figcaption a {
+	transition: padding 0.3s ease;
+}
+
 /* Contact css */
     /* Conteneur du formulaire */
 	.container.contactform {
@@ -418,8 +443,6 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	.partners{display: block;float: left;}
 	.partners img{width: 120px;}
 
-
-
 	.about.spacer{padding-left: 2em;padding-right: 2em;}
 	.spacer{padding:2em 0 0 0;}
 	.process ul li{margin-bottom: 1em;}
@@ -429,4 +452,94 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	.grid.team div{margin: 0;padding: 0;}
 	figure.effect-chico figcaption {padding: 1.5em;}
 	.footer{margin-top: 2em;padding-bottom: 2em;}
+}
+/* page work */
+/* Barre de recherche */
+.search-bar {
+    margin: 100px auto 50px; /* Marge en haut pour espacer de l'en-tête et en bas pour espacer du contenu suivant */
+    padding: 0 15px; /* Ajoute du padding horizontal */
+    max-width: 600px; /* Limite la largeur maximale de la barre de recherche */
+    z-index: 1020; /* Pour garantir que la barre est sous l'en-tête */
+    position: relative; /* Pour que le z-index fonctionne correctement */
+}
+
+.form-inline {
+    display: flex;
+    justify-content: center; /* Centre la barre de recherche horizontalement */
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 8px 15px; /* Réduit légèrement le padding pour un look plus compact */
+    border: 1px solid #ced4da; /* Bordure grise pour un aspect plus net */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Légère ombre interne pour un effet de profondeur */
+    font-size: 14px; /* Taille de la police pour une apparence proportionnée */
+}
+
+.btn-outline-primary {
+    border-radius: 10px;
+    padding: 8px 12px; /* Ajuste le padding pour rendre le bouton plus petit tout en restant utilisable */
+    border: 1px solid #007bff; /* Bordure colorée pour correspondre au thème */
+    color: #007bff; /* Couleur du texte du bouton */
+    font-size: 14px; /* Taille de la police pour correspondre au champ de recherche */
+    font-weight: 500; /* Poids de la police pour une apparence équilibrée */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff; /* Couleur de fond au survol */
+    color: #ffffff; /* Couleur du texte au survol */
+    border-color: #007bff; /* Bordure au survol */
+}
+
+/* Cartes de voiture */
+.card {
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Évite que les images débordent */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--card-border-color);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-brand1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-text {
+        margin-top: 5px;
+        font-size: 16px;
+    }
 }
