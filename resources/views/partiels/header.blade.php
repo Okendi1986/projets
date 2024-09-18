@@ -2,11 +2,11 @@
 
 <div id="home">
     <!-- Slider Starts -->
-    <div id="myCarousel" class="carousel slide banner-slider animated flipInX" data-ride="carousel">     
+    <div id="myCarousel" class="carousel slide banner-slider animated flipInX" data-ride="carousel">
           <div class="carousel-inner">
             <!-- Item 1 -->
             <div class="item1 active">
-              <img src="images/t3.png" alt="banner">          
+              <img src="images/t3.png" alt="banner">
                 <div class="carousel-caption">
                     <div class="caption-wrapper">
                         <div class="caption-info">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <!-- #Item 1 -->
-            
+
             <!-- Item 1 -->
             <!-- #Item 1 -->
           </div>

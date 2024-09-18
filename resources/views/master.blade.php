@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Cyrus Studio</title>
+<title>Auto Sale Company</title>
 
 <!-- Google fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
@@ -43,7 +43,7 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a 
+              <a
               class="navbar-brand1" href="#home">
               <img src="images/t2.png" alt="logo" height="50" width="50px">
               <span class="navbar-text"> Auto-Sale Company</span>
@@ -87,7 +87,7 @@
 <div class="highlight-info">
 <div class="overlay spacer">
 <div class="container">
-	
+
 </div>
 </div>
 </div>
@@ -112,10 +112,8 @@
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
 </div>
-
-
 
 <!-- jquery -->
 <script src="assets/jquery.js"></script>
