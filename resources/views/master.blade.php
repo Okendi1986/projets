@@ -45,7 +45,7 @@
               <!-- Logo Starts -->
               <a
               class="navbar-brand1" href="#home">
-              <img src="images/t2.png" alt="logo" height="50" width="50px">
+              <img src="images/t2.png" alt="logo" height="60" width="60px">
               <span class="navbar-text"> Auto-Sale Company</span>
             </a>
               <!-- #Logo Ends -->

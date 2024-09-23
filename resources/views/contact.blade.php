@@ -28,6 +28,19 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <link rel="stylesheet" href="assets/style.css">
+<style>
+            body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background-image: url('images/voitures.jpg'); /* Lien vers l'image */
+          background-size: cover; /* L'image couvre toute la page */
+          background-position: center; /* Centrer l'image */
+          background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        }
+</style>
 </head>
 <div class="topbar animated fadeInLeftBig"></div>
 
@@ -125,7 +138,7 @@
                 <!-- Team Member 1 -->
                 <div class="col-md-4">
                     <div class="card border-0 shadow">
-                        <img src="assets/images/team-member-1.jpg" class="card-img-top" alt="Membre de l'équipe">
+                        <img src="images/partners/user1.jpeg" class="card-img-top" alt="Membre de l'équipe">
                         <div class="card-body text-center">
                             <h5 class="card-title">John Doe</h5>
                             <p class="card-text">Directeur des Ventes</p>
@@ -136,7 +149,7 @@
                 <!-- Team Member 2 -->
                 <div class="col-md-4">
                     <div class="card border-0 shadow">
-                        <img src="assets/images/team-member-2.jpg" class="card-img-top" alt="Membre de l'équipe">
+                        <img src="images/partners/user2.jpeg" class="card-img-top" alt="Membre de l'équipe">
                         <div class="card-body text-center">
                             <h5 class="card-title">Jane Smith</h5>
                             <p class="card-text">Responsable Clientèle</p>
@@ -147,7 +160,7 @@
                 <!-- Team Member 3 -->
                 <div class="col-md-4">
                     <div class="card border-0 shadow">
-                        <img src="assets/images/team-member-3.jpg" class="card-img-top" alt="Membre de l'équipe">
+                        <img src="images/partners/user3.jpeg" class="card-img-top" alt="Membre de l'équipe">
                         <div class="card-body text-center">
                             <h5 class="card-title">David Brown</h5>
                             <p class="card-text">Technicien Automobile</p>

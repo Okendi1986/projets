@@ -27,6 +27,8 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <link rel="stylesheet" href="assets/style.css">
+
+
 </head>
 <div class="topbar animated fadeInLeftBig"></div>
 
