@@ -144,7 +144,7 @@
 <div class="form-container">
     <form method="POST">
         @csrf
-        <h1>Inscrivez-vous Maintenant</h1>
+        <h1>Inscrivez-vous !</h1>
         <div class="row">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
