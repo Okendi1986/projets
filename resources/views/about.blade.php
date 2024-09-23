@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos de nous - Vente de Voitures</title>
+    <title>À propos de nous - Auto-Sale Company</title>
     <link rel="stylesheet" href="assets/style.css">
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
