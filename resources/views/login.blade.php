@@ -6,15 +6,27 @@
     <title>Connexion - Auto-Sale Company</title>
 
     <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+<!-- bootstrap -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="assets/style.css">
+<!-- animate.css -->
+<link rel="stylesheet" href="assets/animate/animate.css" />
+<link rel="stylesheet" href="assets/animate/set.css" />
+
+<!-- gallery -->
+<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="assets/style.css">
 
     <!-- Custom CSS -->
     <style>
@@ -31,95 +43,66 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        .navbar-wrapper {
-            margin-bottom: 20px;
-        }
-
         .form-container {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            flex-direction: column;
         }
 
         form {
             width: 100%;
-            max-width: 350px;
+            max-width: 400px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border: 1px solid #ddd;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
 
         form:hover {
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+            transform: translateY(-10px);
         }
 
         h1 {
-            font-size: 28px;
             color: #333;
+            font-size: 28px;
             margin-bottom: 20px;
             text-align: center;
-            font-weight: 500;
-        }
-
-        .form-label {
-            font-weight: 500;
-            color: #333;
-        }
-
-        .form-control {
-            border-radius: 8px;
-            padding: 10px;
         }
 
         .btn-primary {
-            background-color: #0056b3;
-            border-color: #0056b3;
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
+            background-color: #007bff;
+            border: none;
             transition: background-color 0.3s ease;
         }
 
         .btn-primary:hover {
-            background-color: #004494;
+            background-color: #0056b3;
         }
 
         .form-check-label {
             font-size: 14px;
+            color: #555;
         }
 
-        .mt-3 {
-            margin-top: 15px !important;
+        .form-text {
+            font-size: 12px;
+            color: #888;
         }
 
-        .mt-3 a {
-            color: #0056b3;
-            text-decoration: none;
+        .form-container p {
+            font-size: 14px;
+            color: #555;
         }
 
-        .mt-3 a:hover {
-            text-decoration: underline;
+        .form-container a {
+            color: #007bff;
         }
-
-        .navbar-brand1 {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar-brand1 img {
-            margin-right: 10px;
-        }
-
-        .navbar-text {
-            font-weight: 500;
-            color: white;
-            font-size: 18px;
-        }
+    </style>
 
     </style>
 </head>
@@ -162,12 +145,12 @@
     <h1>Connexion</h1>
     <div class="mb-3">
         <label for="email" class="form-label"><i class="fas fa-envelope"></i> Adresse Email</label>
-        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Votre email">
+        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Votre email" required>
         <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre email.</div>
     </div>
     <div class="mb-3">
         <label for="password" class="form-label"><i class="fas fa-lock"></i> Mot de passe</label>
-        <input type="password" name="password" class="form-control" id="password" placeholder="Votre mot de passe">
+        <input type="password" name="password" class="form-control" id="password" placeholder="Votre mot de passe" required>
     </div>
     <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="rememberMe">
