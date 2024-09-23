@@ -628,7 +628,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .gototop i{line-height: 0.5em;}
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     body {
         font: 300 14px/1.5 Roboto, Arial, Helvetica; /* Légère augmentation de la taille et amélioration de l'interligne */
     }
@@ -698,7 +698,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body {
         font: 300 12px/1.5 Roboto, Arial, Helvetica; /* Ajustez la ligne de hauteur pour une meilleure lisibilité */
     }

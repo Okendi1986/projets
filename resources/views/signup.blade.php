@@ -12,6 +12,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
+    <link rel="stylesheet" href="assets/style.css">
+
     <!-- Custom styles -->
     <style>
         /* Page Layout */
@@ -96,6 +98,35 @@
         }
     </style>
 </head>
+<div class="topbar animated fadeInLeftBig"></div>
+
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+    <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Logo Starts -->
+                    <a class="navbar-brand1" href="#home">
+                        <img src="images/t2.png" alt="logo" height="50" width="50px">
+                        <span class="navbar-text">Auto-Sale Company</span>
+                    </a>
+                    <!-- #Logo Ends -->
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Nav Starts -->
+                @include('partiels.slide')
+                <!-- #Nav Ends -->
+            </div>
+        </div>
+    </div>
+</div>
 <body>
 
 <!-- Form Container -->
