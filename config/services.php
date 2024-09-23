@@ -35,4 +35,19 @@ return [
         ],
     ],
 
+    /*'firebase' => [ 
+        'apiKey'=> "AIzaSyAJZqqM6zrEVLY9ejewHcD3Xw0gtsIaTXA",
+        'authDomain'=> "auto-sale-df036.firebaseapp.com",
+        'databaseURL'=> "https://auto-sale-df036-default-rtdb.firebaseio.com",
+        'projectId'=> "auto-sale-df036",
+        'storageBucket'=> "auto-sale-df036.appspot.com",
+        'messagingSenderId'=> "1089222187369",
+        'appId'=> "1:1089222187369:web:e6b1f6e56cfc5ca3e405f8"
+    ],*/
+
+    'firebase' => [
+    'credentials' => env('FIREBASE_CREDENTIALS'),
+    'database_url' => env('FIREBASE_DATABASE_URL'),
+    ],
+
 ];
