@@ -471,7 +471,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .container.contactform {
     max-width: 500px;
     padding: 1.8em 1.8em;
-    padding-top: 7em;
+    padding-top: 5em;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -531,6 +531,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 @media (max-width: 767px) {
     .container.contactform {
         padding: 1.5em 1em;
+        padding-top: 11em;
     }
 
     .container.contactform h2 {
@@ -628,62 +629,146 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 @media (max-width: 1200px) {
-	body{font:300 13px/13px Roboto,Arial,Helvetica;}
-	.navbar-brand{
-		padding-top: 11px;
-	}
-	.process ul li{margin:0 0.5em; }
-
-	.grid figure h2{font: 700 1.5em Roboto,Arial,Helvetica;}
-	figure.effect-oscar figcaption{padding: 12%;}
-	figure.effect-oscar figcaption::before,figure.effect-chico figcaption::before{top: 20px;right: 20px;bottom: 20px;left: 20px;}
-
-	.partners img{margin: 0 25px 25px 0;}
+    body {
+        font: 300 14px/1.5 Roboto, Arial, Helvetica; /* Légère augmentation de la taille et amélioration de l'interligne */
+    }
+    .navbar-brand {
+        padding-top: 10px; /* Ajustez pour un meilleur alignement */
+    }
+    .process ul li {
+        margin: 0 0.5em; /* Gardez une marge pour espacer les éléments */
+    }
+    .grid figure h2 {
+        font: 700 1.4em Roboto, Arial, Helvetica; /* Légère réduction pour une meilleure lisibilité */
+    }
+    figure.effect-oscar figcaption {
+        padding: 10%; /* Ajustez le padding pour un meilleur ajustement visuel */
+    }
+    figure.effect-oscar figcaption::before,
+    figure.effect-chico figcaption::before {
+        top: 15px; /* Ajustez pour mieux s'adapter à la taille réduite */
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+    }
+    .partners img {
+        margin: 0 20px 20px 0; /* Réduisez légèrement les marges pour éviter un trop grand espacement */
+        width: auto; /* Permet à l'image de s'ajuster sans déformation */
+    }
 }
+
 
 @media (max-width: 900px) {
-	h1{font: 700 2em Roboto,Arial,Helvetica;text-align: right;}
-	h4 {font: 300 1.3em Roboto,Arial,Helvetica;}
-	.btn{padding: 1em 2em;}
-	.partners img{margin: 0 15px 25px 0;width: 157px;}
-	.process ul li{width: 9em;height: 9em;}
-	figure.effect-chico figcaption {padding: 2em;}
-	figure.effect-oscar figcaption {padding: 20%;}
-	figure.effect-chico figcaption::before{top: 10px;right: 10px;bottom: 10px;left: 10px;}
-	.grid figure.effect-chico p{font-size: 0.6em;line-height: 1.5em;}
+    h1 {
+        font: 700 1.8em Roboto, Arial, Helvetica; /* Réduisez la taille pour plus d'équilibre */
+        text-align: center; /* Centrez le titre pour une meilleure présentation */
+    }
+    h4 {
+        font: 300 1.2em Roboto, Arial, Helvetica; /* Ajustez la taille de la police */
+    }
+    .btn {
+        padding: 0.8em 1.5em; /* Réduisez le padding pour un meilleur ajustement */
+        font-size: 1em; /* Ajustez la taille du texte du bouton */
+    }
+    .partners img {
+        margin: 0 10px 20px 0; /* Réduisez les marges pour mieux s'adapter */
+        width: 130px; /* Ajustez la taille des images */
+    }
+    .process ul li {
+        width: 8em; /* Réduisez la largeur des éléments de la liste */
+        height: 8em; /* Réduisez la hauteur pour un meilleur ajustement */
+    }
+    figure.effect-chico figcaption {
+        padding: 1.5em; /* Réduisez le padding */
+    }
+    figure.effect-oscar figcaption {
+        padding: 15%; /* Réduisez le padding pour un meilleur affichage */
+    }
+    figure.effect-chico figcaption::before {
+        top: 8px; /* Ajustez les valeurs pour un meilleur ajustement */
+        right: 8px;
+        bottom: 8px;
+        left: 8px;
+    }
+    .grid figure.effect-chico p {
+        font-size: 0.8em; /* Augmentez légèrement la taille pour la lisibilité */
+        line-height: 1.4em; /* Ajustez l'interligne pour plus d'espace */
+    }
 }
+
 
 
 @media (max-width: 767px) {
-	body{font:300 12px/12px Roboto,Arial,Helvetica;}
-	.navbar-nav > li > a {line-height: 1em;}
-	.navbar-brand{padding: 7px;}
-	.navbar-brand img{
-		height: 37px;
-		border-radius: 50px;
-	}
-	.navbar-toggle{margin-top: 12px;}
+    body {
+        font: 300 12px/1.5 Roboto, Arial, Helvetica; /* Ajustez la ligne de hauteur pour une meilleure lisibilité */
+    }
+    .navbar-nav > li > a {
+        line-height: 1.2em; /* Augmentez légèrement la hauteur de ligne pour plus d'espace */
+    }
+    .navbar-brand {
+        padding: 5px; /* Réduisez le padding pour un meilleur ajustement */
+    }
+    .navbar-brand img {
+        height: 30px; /* Ajustez la taille de l'image */
+        border-radius: 50px;
+    }
+    .navbar-toggle {
+        margin-top: 10px; /* Ajustez la marge du bouton de navigation */
+    }
 
-	.carousel-caption,.carousel-control,.carousel-indicators{display: none;}
+    .carousel-caption, .carousel-control, .carousel-indicators {
+        display: none; /* Cacher les éléments de la carousel */
+    }
 
-	h2.text-center{text-align: left;font-size: 1.7em;}
-	h4 {font: 300 1.2em Roboto,Arial,Helvetica;}
-	#partners h2{padding: 0 1em;}
-	#home {padding-top: 5em;}
+    h2.text-center {
+        text-align: left; /* Alignez le texte à gauche pour une meilleure lisibilité */
+        font-size: 1.5em; /* Réduisez la taille de la police */
+    }
+    h4 {
+        font: 300 1.1em Roboto, Arial, Helvetica; /* Ajustez la taille de la police */
+    }
+    #partners h2 {
+        padding: 0 1em; /* Ajustez le padding */
+    }
+    #home {
+        padding-top: 11em; /* Ajustez le padding supérieur */
+    }
 
-	.partners{display: block;float: left;}
-	.partners img{width: 120px;}
+    .partners {
+        display: block;
+        float: none; /* Supprimez le flottement pour un affichage en colonne */
+    }
+    .partners img {
+        width: 100px; /* Ajustez la largeur des images */
+    }
 
-	.about.spacer{padding-left: 2em;padding-right: 2em;}
-	.spacer{padding:2em 0 0 0;}
-	.process ul li{margin-bottom: 1em;}
+    .about.spacer {
+        padding: 1em; /* Réduisez le padding pour les petits écrans */
+    }
+    .spacer {
+        padding: 1em 0 0 0; /* Ajustez le padding */
+    }
+    .process ul li {
+        margin-bottom: 0.5em; /* Réduisez l'espacement entre les éléments de la liste */
+    }
 
-	.highlight-info .overlay{padding-bottom: 2em;}
+    .highlight-info .overlay {
+        padding-bottom: 1em; /* Ajustez le padding */
+    }
 
-	.grid.team div{margin: 0;padding: 0;}
-	figure.effect-chico figcaption {padding: 1.5em;}
-	.footer{margin-top: 2em;padding-bottom: 2em;}
+    .grid.team div {
+        margin: 0; /* Supprimez les marges */
+        padding: 0; /* Supprimez le padding */
+    }
+    figure.effect-chico figcaption {
+        padding: 1em; /* Réduisez le padding */
+    }
+    .footer {
+        margin-top: 1em; /* Ajustez la marge supérieure */
+        padding-bottom: 1em; /* Ajustez le padding inférieur */
+    }
 }
+
 /* page work */
 /* Barre de recherche */
 .search-bar {
