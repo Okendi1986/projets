@@ -83,27 +83,43 @@
 <body>
   <!-- Contact Starts -->
   <div class="container contactform">
+
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    @if($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <h2>
       <strong>Contactez-
         <span style="color: orange">nous</span></strong><br>
     </h2>
 
-    <form id="contactForm">
-      <div class="form-group">
-        <label for="name">Nom</label>
-        <input type="text" class="form-control" id="name" placeholder="Votre nom" required aria-required="true">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Votre email" required aria-required="true">
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required aria-required="true"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">
-        <i class="fa fa-paper-plane"></i> Envoyer
-      </button>
+    <form id="contactForm" method="POST" action="{{ route('contact.send') }}">
+        @csrf
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <i class="fa fa-paper-plane"></i> Envoyer
+        </button>
     </form>
   </div>
   <!-- Contact Information -->

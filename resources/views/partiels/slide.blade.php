@@ -3,8 +3,18 @@
    <ul class="nav navbar-nav navbar-right scroll">
       <li class="active"><a href="{{ route('master') }}">Home</a></li>
       <li><a href="{{ route('about') }}">A propos</a></li>
-      <li><a href="{{ route('works') }}">Nouvelles voitures</a></li>
-      <li><a href="{{ route('services') }}">Services</a></li>
+      <li><a href="{{ route('works') }}">Trouver une voiture</a></li>
+
+      <!-- Dropdown for Services
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+            <li><a href="{{ route('service.web') }}">Développement Web</a></li>
+            <li><a href="{{ route('service.mobile') }}">Développement Mobile</a></li>
+            <li><a href="{{ route('service.consulting') }}">Consulting</a></li>
+         </ul>
+      </li> -->
+
       <li><a href="{{ route('contact') }}">Contact</a></li>
 
       @guest

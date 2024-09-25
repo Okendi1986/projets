@@ -35,7 +35,7 @@ return [
         ],
     ],
 
-    /*'firebase' => [ 
+    /*'firebase' => [
         'apiKey'=> "AIzaSyAJZqqM6zrEVLY9ejewHcD3Xw0gtsIaTXA",
         'authDomain'=> "auto-sale-df036.firebaseapp.com",
         'databaseURL'=> "https://auto-sale-df036-default-rtdb.firebaseio.com",
@@ -48,6 +48,9 @@ return [
     'firebase' => [
     'credentials' => env('FIREBASE_CREDENTIALS'),
     'database_url' => env('FIREBASE_DATABASE_URL'),
+    'credentials_file' => env('FIREBASE_CREDENTIALS'),
     ],
+
+
 
 ];
