@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="assets/style.css">
 
 <style>
-            body {
+        body {
           margin: 0;
           padding: 0;
           display: flex;

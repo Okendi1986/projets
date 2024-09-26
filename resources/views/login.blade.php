@@ -8,14 +8,28 @@
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Font Awesome -->
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
+    <!-- bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-    <!-- Custom CSS -->
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/animate/animate.css" />
+    <link rel="stylesheet" href="assets/animate/set.css" />
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
     <link rel="stylesheet" href="assets/style.css">
+
+    </head>
 
     <style>
         body {
@@ -41,7 +55,7 @@
 
         form {
             width: 100%;
-            max-width: 400px;
+            max-width: 340px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -92,40 +106,41 @@
     @endif
 
     <form action="{{ route('authenticate') }}" method="POST">
-        @csrf
-        <h1>Connexion</h1>
+    @csrf
+    <h1>Connexion</h1>
 
-        <div class="mb-3">
-            <label for="email" class="form-label">
-                <i class="fas fa-envelope"></i> Adresse Email
-            </label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Votre email" required>
-            <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre email.</div>
-            @if($errors->has('email'))
-                <div class="alert alert-danger">{{ $errors->first('email') }}</div>
-            @endif
-        </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">
+            <i class="fas fa-envelope"></i> Adresse Email
+        </label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Votre email" required>
+        <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre email.</div>
+        @if($errors->has('email'))
+            <div class="alert alert-danger">{{ $errors->first('email') }}</div>
+        @endif
 
-        <div class="mb-3">
-            <label for="password" class="form-label">
-                <i class="fas fa-lock"></i> Mot de passe
-            </label>
-            <input type="password" name="password" class="form-control" id="password" placeholder="Votre mot de passe" required>
-            @if($errors->has('password'))
-                <div class="alert alert-danger">{{ $errors->first('password') }}</div>
-            @endif
-        </div>
+    </div>
 
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="rememberMe" name="remember">
-            <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
-        </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">
+            <i class="fas fa-lock"></i> Mot de passe
+        </label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Votre mot de passe" required>
+        @if($errors->has('password'))
+            <div class="alert alert-danger">{{ $errors->first('password') }}</div>
+        @endif
+    </div>
 
-        <div>
-            <p class="mt-3">Pas de compte ? <a href="{{ route('signup') }}">Inscrivez-vous ici</a>.</p>
-        </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="rememberMe" name="remember">
+        <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+    </div>
 
-        <button type="submit" class="btn btn-primary">Se connecter</button>
+    <div>
+        <p class="mt-3">Pas de compte ? <a href="{{ route('signup') }}">Inscrivez-vous ici</a>.</p>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Se connecter</button>
     </form>
 </div>
 

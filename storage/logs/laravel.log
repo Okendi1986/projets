@@ -136,3 +136,11 @@
 #78 C:\\Users\\mca20\\Downloads\\projets1\\projets\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
 #79 {main}
 "} 
+[2024-09-26 15:09:59] local.INFO: Email envoyé à : leonelyapi30@gmail.com  
+[2024-09-26 15:13:51] local.INFO: Email envoyé à : leonelyapi30@gmail.com  
+[2024-09-26 15:21:12] local.INFO: Email envoyé à : leonelyapi30@gmail.com  
+[2024-09-26 15:29:36] local.INFO: Email envoyé à : leonelyapi30@gmail.com  
+[2024-09-26 15:36:20] local.ERROR: Erreur lors de l'envoi de l'email de contact : Undefined array key "email"  
+[2024-09-26 15:38:36] local.INFO: Email envoyé à : leonelyapi30@gmail.com  
+[2024-09-26 15:42:15] local.INFO: Email envoyé à : leonelyapi30@gmail.com  
+[2024-09-26 15:50:04] local.INFO: Email envoyé à : leonelyapi30@gmail.com  

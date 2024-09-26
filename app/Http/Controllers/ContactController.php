@@ -5,15 +5,10 @@ namespace App\Http\Controllers;
 use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
-    /**
-     * Gère l'envoi d'un email via le formulaire de contact.
-     *
-     * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
     public function sendEmail(Request $request)
     {
         // Validation des données du formulaire
@@ -26,14 +21,22 @@ class ContactController extends Controller
         // Préparation des données à envoyer
         $data = [
             'name' => $request->name,
-            'email' => $request->email,
+            'email' => $request->email, // Email expéditeur
             'message' => $request->message,
         ];
 
-        // Envoi de l'email
-        Mail::to('leonelyapi699@gmail.com')->send(new ContactFormMail($data));
+        // Tentative d'envoi de l'email
+        try {
+            Mail::to('leonely699@gmail.com')->send(new ContactFormMail($data));
+            Log::info('Email envoyé à : ' . $data['email']);
 
-        // Redirection avec message de succès
-        return redirect()->back()->with('success', 'Votre message a été envoyé avec succès !');
+            return redirect()->back()->with('success', 'Votre message a été envoyé avec succès !');
+
+
+        } catch (\Exception $e) {
+            Log::error('Erreur lors de l\'envoi de l\'email de contact : ' . $e->getMessage());
+
+            return redirect()->back()->with('error', 'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer plus tard.');
+        }
     }
 }

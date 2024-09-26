@@ -107,15 +107,15 @@
         @csrf
         <div class="form-group">
             <label for="name">Nom</label>
-            <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom svp!" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Votre email" required>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Votre email personnel svp!" required>
         </div>
         <div class="form-group">
             <label for="message">Message</label>
-            <textarea name="message" class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+            <textarea name="message" class="form-control" id="message" rows="5" placeholder="Votre message ici" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">
             <i class="fa fa-paper-plane"></i> Envoyer

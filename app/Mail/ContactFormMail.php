@@ -12,16 +12,28 @@ class ContactFormMail extends Mailable
 
     public $data;
 
+    /**
+     * Crée une nouvelle instance du message.
+     *
+     * @param array $data
+     * @return void
+     */
     public function __construct($data)
     {
         $this->data = $data;
+
     }
 
+    /**
+     * Construit le message.
+     *
+     * @return $this
+     */
     public function build()
     {
-        return $this->from('your-email@example.com')
-                    ->subject('Nouveau message de contact')
-                    ->view('emails.contact')
-                    ->with('data', $this->data);
+        return $this->view('emails.contact') // Assurez-vous que la vue existe
+            ->from($this->data['email']) // Utiliser l'email et le nom de l'expéditeur
+            ->replyTo($this->data['email']) // Répondre à l'email de l'expéditeur
+            ->subject('Message client AutoSaleCompany ');
     }
 }
